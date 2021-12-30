@@ -1,0 +1,39 @@
+body{
+	background-color: lightseagreen;
+}
+h1{
+	font-size: 40px;
+	color: teal;
+}
+h2{
+	font-size: 30px;
+	color: darkmagenta;
+}
+h3{
+	font-size: 20px;
+	color: darkgoldenrod;
+}
+h3{
+	font-size: 50px;
+	color: teal;
+}
+blockquote{
+	font-family: fantasy;
+	font-weight: 200;
+}
+span{
+	font-family: cursive;
+	background: yellow;
+}
+
+/* ALl elements of class big will have these properties */
+.big{
+	font-size: 70px;
+	color: darkred;
+}
+.uppercase{
+	text-transform: uppercase;
+}
+.big.uppercase{
+	color: black;
+}
