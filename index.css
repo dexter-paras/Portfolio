@@ -1,0 +1,57 @@
+header{
+	background-color: #d14635;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+header img{
+	border-radius: 600px;
+	border: 10px solid white;
+}
+
+h1, h2 {
+     font-family: 'IM Fell English SC', serif; 
+}
+
+h2{
+	font-size: 35px;
+	color: #e70c19;
+	margin: 40px 0 10px;
+	font-weight: bold;
+}
+
+header h1{
+	color: white;
+	font-size: 50px;
+}
+
+body{
+	 font-family: 'Roboto Slab', serif;
+	 font-size: 20px;
+	 line-height: 30px;
+}
+
+main{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+footer{
+	background-color: #d14635;
+	text-align: center;
+	color: white;
+	padding: 40px;
+}
+
+a{
+	color: #e70c19;
+}
+
+a:hover{
+	color: white;
+	background-color: #483a94;
+}

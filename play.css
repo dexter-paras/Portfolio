@@ -25,6 +25,13 @@ span{
 	font-family: cursive;
 	background: yellow;
 }
+div{
+	display: table;
+	text-align: right;
+	text-decoration: underline;
+	width: 1500px;
+	height: 100px;
+}
 
 /* ALl elements of class big will have these properties */
 .big{
