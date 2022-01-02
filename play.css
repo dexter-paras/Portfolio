@@ -25,13 +25,6 @@ span{
 	font-family: cursive;
 	background: yellow;
 }
-div{
-	display: table;
-	text-align: right;
-	text-decoration: underline;
-	width: 1500px;
-	height: 100px;
-}
 
 /* ALl elements of class big will have these properties */
 .big{
@@ -44,3 +37,28 @@ div{
 .big.uppercase{
 	color: black;
 }
+
+.cool{
+	visibility: hidden;
+	text-align: center;
+	width: 300px;
+	height: 300px;
+	background-color: green;
+	transition: background-color 1s;
+}
+
+.cool.red{
+	visibility: visible;
+	background-color: red;
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,5 +1,5 @@
 header{
-	background-color: #d14635;
+	background-color: #0A1854;
 	text-align: center;
 	padding-top: 50px;
 	padding-bottom: 50px;
@@ -18,7 +18,7 @@ h1, h2 {
 
 h2{
 	font-size: 35px;
-	color: #e70c19;
+	color: #0A1854;
 	margin: 40px 0 10px;
 	font-weight: bold;
 }
@@ -41,17 +41,40 @@ main{
 }
 
 footer{
-	background-color: #d14635;
+	background-color: #0A1854;
 	text-align: center;
 	color: white;
 	padding: 40px;
 }
 
 a{
-	color: #e70c19;
+	color: #0A1854;
 }
 
 a:hover{
 	color: white;
-	background-color: #483a94;
+	background-color: #0A1854;
+}
+
+.home__resume {
+    background-color: lightgrey;
+    color: var(--text-white);
+    padding: 10px 30px;
+    font-weight: 600;
+    font-size: .9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .3s ease;
+    text-decoration: none;
+    border: 1px solid transparent;
+}
+
+.home__profession {
+	color: #0A1854;
+    font-size: 2.5rem;
+    line-height: 5rem;
+    font-weight: 700;
+    margin: 10px 0 25px;
+    letter-spacing: 5px;
 }
