@@ -1,8 +1,8 @@
 header{
 	background-color: #0A1854;
 	text-align: center;
-	padding-top: 50px;
-	padding-bottom: 50px;
+	padding-top: 25px;
+	padding-bottom: 25px;
 	padding-left: 0px;
 	padding-right: 0px;
 }
@@ -17,7 +17,7 @@ h1, h2 {
 }
 
 h2{
-	font-size: 35px;
+	font-size: 40px;
 	color: #0A1854;
 	margin: 40px 0 10px;
 	font-weight: bold;
@@ -25,7 +25,7 @@ h2{
 
 header h1{
 	color: white;
-	font-size: 50px;
+	font-size: 40px;
 }
 
 body{
@@ -54,6 +54,11 @@ a{
 a:hover{
 	color: white;
 	background-color: #0A1854;
+	cursor:pointer;
+}
+
+.tab {
+ margin-left: 1em
 }
 
 .home__resume {
@@ -77,4 +82,16 @@ a:hover{
     font-weight: 700;
     margin: 10px 0 25px;
     letter-spacing: 5px;
+}
+
+.letter{
+	/*font-size: 60px;*/
+	display: inline-block;
+	transition:  all 250ms ease-in-out;
+}
+
+.letter.active{
+	transform: scale(2.5) rotate3d(0, 0, 1, 20deg);
+	/*background-color: black;*/
+	color: orangered;
 }

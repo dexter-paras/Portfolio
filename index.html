@@ -16,41 +16,143 @@
 	<!-- Header Element -->
 	<header>
 		<img src="PC_CoverPhoto.jpg" height="276px" width="276px">
-		<h1>Paras Chawla पारस चावला 帕拉斯</h1>
+		<h1 id='title'>Paras Chawla</h1><br>
+		<h1 style="color: whitesmoke;text-decoration-style: double;" id="professionId"></h1>
+
+		<script type="text/javascript">
+
+			// Add Animation
+			// 1. Select h1 Title using Java Script
+			const h1TitleId = document.getElementById('title');
+			animation(h1TitleId);
+			var fsd = "Full Stack Developer";
+			// var fed = "Front End Developer";
+			// var bed = "Back End Developer";
+
+			// Approach 1 - Using setTimeout
+
+
+			 var i = 0;				
+			(function f() {
+
+			  i++;
+			  howManyTimes = fsd.length+1
+			  if (i < howManyTimes) {
+			    document.getElementById('professionId').innerText=fsd.substr(0,i).toUpperCase();
+			    //document.getElementById('professionId').style.color = generateRandomColor();
+			    // calling callback function f after every 200 sec
+			    setTimeout(f, 300);
+			  }
+			})();
+
+			/* Approach 2 - Using setTimeout and setInterval
+			setInterval(function(){
+				i++;
+				howManyTimes = bep.length+1
+			  	if (i < howManyTimes) {
+				document.getElementById('professionId').innerText= bep.substr(0,i).toUpperCase();
+				}
+			},300);
+
+			setInterval(function(){
+				i++;
+				howManyTimes = fep.length+1
+			  	if (i < howManyTimes) {
+				document.getElementById('professionId').innerText= fep.substr(0,i).toUpperCase();
+				}
+			},300);
+
+			setInterval(function(){
+				i++;
+				howManyTimes = fsp.length+1
+			  	if (i < howManyTimes) {
+				document.getElementById('professionId').innerText= fsp.substr(0,i).toUpperCase();
+				}
+			},300);
+			*/
+
+			// make image change to grey when mouse hover over that id
+			var imgNode = document.querySelector('img');
+			imgNode.addEventListener('mouseleave',function(){
+				imgNode.src='PC_CoverPhoto.jpg';
+			});
+			imgNode.addEventListener('mouseenter',function(){
+				imgNode.src='grey_coverphoto.png';
+			});
+
+		</script>
+
 	</header>
 
 	<!-- Main Element -->
 	<main>
-		<h2>About Paras</h2>
-		<p>Solution oriented Software Engineer with a get-it-done approach.<br>
-			Impactful, driven, communicative and capable of continuing work in a challenging and fast-paced environment.<br>
-			Lover of technology and beautiful design.
-		</p>
 
-		<!-- 		
-		<p class="home__profession"><span>F</span><span>u</span><span>l</span><span>l&nbsp</span><span>S</span><span>t</span><span>a</span><span>c</span><span>k&nbsp</span><span>D</span><span>e</span><span>v</span><span>e</span><span>l</span><span>o</span><span>p</span><span>e</span><span>r</span>
-		</p> 
-		-->
+		<h2 id='about'>About Paras</h2>
+		
+		<script type="text/javascript">
+			const h2AboutId = document.getElementById('about');
+			animation(h2AboutId);
+		</script>
 
-		<a href="https://drive.google.com/file/d/1EknfNxycm6zyIhwAaQM-Do8R67xT_PqF/view?usp=sharing" class="home__resume" target="_blank" title="Paras Chawla Resume">View My Resume</a>
+		<ul>
+			<li>Software Engineer in Amazon, Ex-Paytm</li>
+			<li>Solution oriented Software Engineer with a get-it-done approach</li>
+			<li>Impactful, driven, communicative and capable of continuing work in a challenging and fast-paced environment</li>
+			<li>Lover of technology and beautiful design</li>
+			<li>I'm based in India and always open to meeting people working on interesting things</li>
 
-		<h2> Paras Characteristics </h2>
+		</ul>
+
+		<a href="https://drive.google.com/file/d/1EknfNxycm6zyIhwAaQM-Do8R67xT_PqF/view?usp=sharing" class="home__resume" id="cursor" target="_blank" title="Paras Chawla Resume">View My Resume</a>
+
+		<h2 id='char'> Paras Characteristics </h2>
+		<script type="text/javascript">
+			const h2CharId = document.getElementById('char');
+			animation(h2CharId);
+		</script>
 		<ol>
 			<li>Love working on Distributed Complex system</li>
 			<li>Lover of finace & market </li>
 			<li>Favorite sports include Cricket(Not a surpise :)) </li>
 		</ol>
-		<h2>How to reach me</h2>
+
+		<h2 id='skills'> Skills </h2>
+		<script type="text/javascript">
+			const h2SkillId = document.getElementById('skills');
+			animation(h2SkillId);
+		</script>
 		<ul>
-			<li>Want to checkout my professional portfolio, Reach out to my <a href="https://www.linkedin.com/in/paras4all/" target="_blank" title="Paras Chawla LinkedIn">linkedin</a></li>
-			<li>Want to checkout what i do as hobby projects, Reach out to my <a href="https://github.com/dexter-paras/" target="_blank" title="Paras Chawla Github">Github</a></li>
-			<li>Problem solving, Reach out to my <a href="https://leetcode.com/dexter-pc/" target="_blank" title="Paras Chawla LeetCode">LeetCode</a></li>
+			<img class='tab' src="java.png" style="height: 80px; width: 80px">
+			<img class='tab' src="https://vaadin.com/static/content/learning-center/learn/tutorials/securing-your-app-with-spring-security/spring--thumbnail.png" style="height: 80px; width: 80px">
+			<img class='tab' src="aws1.jpeg" style="height: 80px; width: 80px">
+			<img class='tab' src="html5.png" style="height: 80px; width: 80px">
+			<img class='tab' src="css.png" style="height: 80px; width: 80px">
+			<img class='tab' src="javascr.jpeg" style="height: 80px; width: 80px">
+			<img class='tab' src="react.png" style="height: 80px; width: 80px">
+		</ul>
+
+		<h2 id='reach'>How to reach me</h2>
+		<script type="text/javascript">
+			const h2ReachId = document.getElementById('reach');
+			animation(h2ReachId);
+		</script>
+		<ul>
+			<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f4dd.png" style="height: 50px; width: 50px">
+			<a href="https://www.linkedin.com/in/paras4all/" id="cursor" target="_blank"title="Paras Chawla LinkedIn">Linkedin</a><br>
+			
+			<img src="https://github.githubassets.com/images/icons/emoji/unicode/1f4c2.png" style="height: 50px; width: 50px">
+			<a href="https://github.com/dexter-paras/" id="cursor" target="_blank" title="Paras Chawla Github">
+			Github</a><br>
+			
+			<img src="LeetCode.png" style="height: 50px; width: 50px">
+			<a href="https://leetcode.com/dexter-pc/" id="cursor" target="_blank" title="Paras Chawla Github">
+			LeetCode</a><br>
 		</ul>
 	</main>
 
 	<!-- Footer Eleement -->
 	<footer>
-		<p>This site was created as a fun project while relearning html/css © Paras</p>
+		<p>This site was created as a fun project while relearning html/css/js © Paras</p>
 	</footer>
 </body>
 </html>
