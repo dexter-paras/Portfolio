@@ -64,3 +64,15 @@ function animation(id){
 				})
 			})
 }
+
+function headline(str,i) {
+			  	i++;
+			  	howManyTimes = str.length+1
+			  if (i < howManyTimes) {
+			    document.getElementById('professionId').innerText=str.substr(0,i).toUpperCase();
+			    //document.getElementById('professionId').style.color = generateRandomColor();
+			    // calling callback function f after every 200 sec
+			    setTimeout(headline, 300,str,i);
+			 }
+	}
+

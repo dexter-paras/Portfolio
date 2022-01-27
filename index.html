@@ -25,25 +25,12 @@
 			// 1. Select h1 Title using Java Script
 			const h1TitleId = document.getElementById('title');
 			animation(h1TitleId);
-			var fsd = "Full Stack Developer";
-			// var fed = "Front End Developer";
-			// var bed = "Back End Developer";
 
 			// Approach 1 - Using setTimeout
 
-
-			 var i = 0;				
-			(function f() {
-
-			  i++;
-			  howManyTimes = fsd.length+1
-			  if (i < howManyTimes) {
-			    document.getElementById('professionId').innerText=fsd.substr(0,i).toUpperCase();
-			    //document.getElementById('professionId').style.color = generateRandomColor();
-			    // calling callback function f after every 200 sec
-			    setTimeout(f, 300);
-			  }
-			})();
+			setTimeout(headline,0, 'Back End Developer',0)
+			setTimeout(headline,6000,'Front End Developer',0)
+			setTimeout(headline,12000,'Full Stack Developer',0)
 
 			/* Approach 2 - Using setTimeout and setInterval
 			setInterval(function(){
@@ -152,7 +139,7 @@
 
 	<!-- Footer Eleement -->
 	<footer>
-		<p>This site was created as a fun project while relearning html/css/js © Paras</p>
+		<p>Portfolio was created as a fun project while relearning html/css/js © Paras</p>
 	</footer>
 </body>
 </html>
